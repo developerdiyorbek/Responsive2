@@ -1,0 +1,25 @@
+.instagram {
+  max-width: 1300px;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  .instagram-logo {
+    display: block;
+    width: 255px;
+    height: 73px;
+    margin-bottom: 30px;
+  }
+  .instagram-images {
+    @include d-flex(flex-start, flex-start);
+    flex-wrap: wrap;
+    gap: 20px;
+    div {
+      width: 22%;
+      img {
+        max-width: 417px;
+        width: 100%;
+        height: 417px;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.services-section {
+  max-width: 1300px;
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 50px;
+  .services-row {
+    position: absolute;
+    left: 0;
+    top: 65px;
+    width: 200px;
+    height: 6px;
+    background-color: #000;
+  }
+  .services {
+    h3 {
+      font-size: 36px;
+      font-weight: 300;
+      margin-bottom: 60px;
+    }
+    .services-cards {
+      @include d-flex(flex-start, flex-start);
+      .services-card {
+        width: 25%;
+        img {
+          max-width: 430px;
+          width: 100%;
+          height: 487px;
+          margin-bottom: 40px;
+        }
+        span {
+          display: block;
+          font-size: 32px;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+        span::before {
+          display: block;
+          content: " ";
+          width: 20px;
+          height: 20px;
+          background-color: #000;
+          margin-bottom: 7px;
+        }
+        p {
+          max-width: 294px;
+          width: 100%;
+          color: #4f4f4f;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 147.187%;
+        }
+      }
+    }
+  }
+}

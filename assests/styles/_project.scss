@@ -1,0 +1,104 @@
+.project-section {
+  position: relative;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  h2 {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 80px;
+  }
+  .project {
+    @include d-flex(center, none);
+    gap: 30px;
+    .top-row {
+      position: absolute;
+      left: 0;
+      top: 100px;
+      width: 200px;
+      height: 10px;
+      background-color: black;
+    }
+    &__left {
+      span {
+        display: block;
+        max-width: 800px;
+        width: 100%;
+        font-size: 48px;
+        font-weight: 400;
+        margin-bottom: 48px;
+      }
+      p {
+        max-width: 600px;
+        width: 100%;
+        color: #333;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 147.187%;
+        margin-bottom: 100px;
+      }
+      button {
+        max-width: 400px;
+        width: 100%;
+        height: 80px;
+        border: 1px solid #000;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 300;
+        cursor: pointer;
+        transition: background-color 0.4s;
+        &:hover {
+          background-color: #696969;
+        }
+      }
+    }
+    &__right {
+      padding-top: 40px;
+      border-left: 2px solid #e0e0e0;
+      img {
+        max-width: 450px;
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+      }
+      span {
+        display: block;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 147.187%;
+        margin-bottom: 10px;
+        margin-left: 30px;
+      }
+      p {
+        color: #333;
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 147.187%;
+        margin-left: 30px;
+        margin-bottom: 20px;
+      }
+      p::before {
+        content: " ";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #0e0e0e;
+      }
+    }
+    .project__right-row {
+      position: absolute;
+      max-width: 500px;
+      width: 100%;
+      height: 1px;
+      right: 150px;
+      background-color: #e0e0e0;
+    }
+  }
+}
+.project-bottom {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}

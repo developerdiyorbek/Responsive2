@@ -1,0 +1,74 @@
+header {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url("../images/bg-header.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  height: 100vh;
+  margin-bottom: 45px;
+  .header {
+    @include d-flex(space-between, center);
+    margin-bottom: 200px;
+    &__left {
+      img {
+        width: 36px;
+        height: 32px;
+        transition: transform 0.8s;
+      }
+      a:hover {
+        img {
+          transform: rotate(360deg);
+        }
+      }
+    }
+    &__center {
+      padding-top: 40px;
+      img {
+        width: 184px;
+        height: 77px;
+      }
+    }
+    &__right {
+      img {
+        width: 29px;
+        height: 29px;
+        transition: transform 0.4s;
+      }
+      a:hover {
+        img {
+          transform: scale(1.4);
+        }
+      }
+    }
+  }
+
+  .hero {
+    flex-direction: column;
+    @include d-flex(none, center);
+    h1 {
+      color: #f2f2f2;
+      font-size: 80px;
+      font-weight: 300;
+      margin-bottom: 100px;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      .hero-btn {
+        width: 348px;
+        height: 77px;
+        border: 1px solid #c4c4c4;
+        background: rgba(17, 17, 17, 0.6);
+        color: #fff;
+        font-size: 24px;
+        font-weight: 300;
+        cursor: pointer;
+        transition: all ease 0.5s;
+      }
+      .hero-btn:hover {
+        border: 1px solid #c4c4c4;
+        background-color: #696969;
+      }
+    }
+  }
+}

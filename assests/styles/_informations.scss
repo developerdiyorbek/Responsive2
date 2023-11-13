@@ -1,0 +1,39 @@
+.informations {
+  margin: 0 auto;
+  width: 95%;
+  .information-cards {
+    @include d-flex(center, flex-start);
+    gap: 30px;
+    padding: 37px 0 41px 0;
+    background-color: #f2f2f2;
+    margin-bottom: 45px;
+    .information-card {
+      span {
+        display: block;
+        color: #0e0e0e;
+        font-size: 48px;
+        font-weight: 400;
+        margin-bottom: 7px;
+      }
+      .spot {
+        width: 20px;
+        height: 20px;
+        background-color: black;
+        margin-right: 5px;
+      }
+      h3 {
+        color: #0e0e0e;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 16px;
+      }
+      p {
+        max-width: 280px;
+        width: 100%;
+        color: #0e0e0e;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+}

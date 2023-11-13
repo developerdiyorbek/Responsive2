@@ -1,0 +1,34 @@
+.sofa-section {
+  background-image: url("../images/bg-7.png");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-bottom: 80px;
+  .sofa {
+    padding-top: 140px;
+    @include d-flex(center, center);
+    flex-direction: column;
+    h4 {
+      color: #fff;
+      font-size: 48px;
+      font-weight: 300;
+      line-height: 146.687%;
+      margin-bottom: 100px;
+    }
+    p {
+      color: #fff;
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 146.687%;
+      margin-bottom: 17px;
+    }
+    p::before {
+      content: " ";
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      background-color: #fff;
+      margin: 0 10px 10px 0;
+    }
+  }
+}
